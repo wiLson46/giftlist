@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/b84bdf459f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Lobster&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="./imagenes/favicon32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./imagenes/favicon64.png" sizes="64x64">
+    <link rel="icon" type="image/png" href="./imagenes/favicon128.png" sizes="128x128">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <title>Lista</title>
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+        <div class="container">
+            <a class="navbar-brand tituloMain"> wiLson's list
+            </a>
+            <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#menuColapsable" aria-controls="#menuColapsable" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuColapsable">
+                <ul class="navbar-nav ml-auto text-uppercase">
+
+                    <li class="nav-item ml-auto text-right px-1">
+                        <div id="link1" class="nav-link">Todos</div>
+                    </li>
+
+                    <li class="nav-item ml-auto text-right px-1">
+                        <a id="link2" class="nav-link">Barato</a>
+                    </li>
+
+                    <li class="nav-item ml-auto text-right px-1">
+                        <a id="link3" class="nav-link">Medio</a>
+                    </li>
+
+                    <li class="nav-item ml-auto text-right px-1">
+                        <a id="link4" class="nav-link">Caro</a>
+                    </li>
+
+                    <li class="nav-item ml-auto text-right px-1">
+                        <a id="link5" class="nav-link">Soñar no cuesta nada</a>
+                    </li>
+
+                    <li class="nav-item ml-auto text-right px-1">
+                        <a id="link6" class="nav-link">Los que mas me copan</a>
+                    </li>
+
+                    <li class="nav-item ml-auto text-right px-1">
+                        <a class="nav-link" data-toggle="modal" data-target="#modalAviso">Preguntas Frecuentes</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container p-5">
+        <div class="card-columns">
+            <div class="card border-success cartaCaro">
+                <img class="card-img-top" src="./images/giftimg0002.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Puerta SISS BUNKER</h5>
+                    <p class="card-text">Una puerta para mucha seguridad del departamento</p>
+                    <p class="card-text text-center"><a href="https://siss.com.ar/puertas/puertas-blindadas-bunker/" target="_blank" class="btn btn-primary" role="button">Web Oficial</a></p>
+                </div>
+            </div>
+            <div class="card border-danger cartaMedio">
+                <img class="card-img-top" src="./images/giftimg0001.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Camara Ring para puerta</h5>
+                    <p class="card-text">Reemplaza el ojo de pez de la puerta por un timbre + camara que se puede atender por una app</p>
+                    <p class="card-text text-center"><a href="https://articulo.mercadolibre.com.ar/MLA-872679850-ring-peephole-cam-timbre-inteligente-video-hd-audio-alexa-_JM" target="_blank" class="btn btn-primary" role="button">Comprar</a> <a href="https://ring.com/products/door-peephole-security-camera"
+                            target="_blank" class="btn btn-primary" role="button">Web Oficial</a></p>
+                </div>
+            </div>
+            <div class="card border-danger cartaBarato cartaMedio cartaCaro cartaSoñar">
+                <img class="card-img-top" src="./images/giftimg0003.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Dinerito</h5>
+                    <p class="card-text">Dolares, pesos, cheques, transferencia, patacones. Porque el dinero no compra la felicidad pero si hay que llorar pero prefiero llorar en un Ferrari</p>
+                    <p class="card-text text-center"><a href="https://wa.me/5493413487711" target="_blank" class="btn btn-primary" role="button">Pedir el CBU</a></p>
+                </div>
+            </div>
+            <div class="card border-danger cartaSoñar">
+                <img class="card-img-top" src="./images/giftimg0004.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Un Ferrari SF90 Spider... aunque cualquier auto esta bien</h5>
+                    <p class="card-text">Claramente prefiero el Ferrari pero cualquier auto esta bien</p>
+                    <p class="card-text text-center"><a href="https://www.ferrari.com/es-AR/auto/sf90-spider" target="_blank" class="btn btn-primary" role="button">Comprar</a></p>
+                </div>
+            </div>
+            <div class="card border-danger cartaMedio">
+                <img class="card-img-top" src="./images/giftimg0005.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Cerradura inteligente</h5>
+                    <p class="card-text">Preferiria la version WiFi, pero no llega a argentina asi que dejo la version normal que esta en ML</p>
+                    <p class="card-text text-center"><a href="https://articulo.mercadolibre.com.ar/MLA-883695998-august-cerradura-inteligente-homekit-_JM#position=1&type=item&tracking_id=60ab70af-1720-4763-b54b-e278538af759" target="_blank" class="btn btn-primary" role="button">Comprar</a>                        <a href="https://august.com/products/august-smart-lock-pro-connect" target="_blank" class="btn btn-primary" role="button">Web Oficial</a></p>
+                </div>
+            </div>
+            <div class="card border-danger cartaCaro">
+                <img class="card-img-top" src="./images/giftimg0006.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Tablet Samsung Tab S7 o S7+</h5>
+                    <p class="card-text">Hay que recambiar el iPad viejo que ya no funciona mas por una que valga la pena</p>
+                    <p class="card-text text-center"><a href="https://articulo.mercadolibre.com.ar/MLA-886132732-tablet-samsung-galaxy-tab-sm-t870-6gb-128gb-11-s-pen-negro-_JM" target="_blank" class="btn btn-primary" role="button">Comprar</a> <a href="https://www.samsung.com/ar/tablets/galaxy-tab-s/galaxy-tab-s7-11-inch-mystic-black-128gb-wi-fi-sm-t870nzklaro/"
+                            target="_blank" class="btn btn-primary" role="button">Web Oficial</a></p>
+                </div>
+            </div>
+            <div class="card border-danger cartaCaro">
+                <img class="card-img-top" src="./images/giftimg0007.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">iPad Air 4ta generación</h5>
+                    <p class="card-text">Nada mejor para recambiar el iPad viejo que un iPad nuevo no?</p>
+                    <p class="card-text text-center"><a href="https://articulo.mercadolibre.com.ar/MLA-896331809-apple-ipad-air-109-pulgadas-wi-fi-64-gb-gris-4ta-gen-_JM" target="_blank" class="btn btn-primary" role="button">Comprar</a> <a href="https://www.apple.com/ipad-air/" target="_blank"
+                            class="btn btn-primary" role="button">Web Oficial</a></p>
+                </div>
+            </div>
+            <div class="card border-danger cartaMedio">
+                <img class="card-img-top" src="./images/giftimg0008.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Hub Para domotica</h5>
+                    <p class="card-text">Un aparatito que sirve para centralizar todas las cosas de domotica</p>
+                    <p class="card-text text-center"><a href="https://articulo.mercadolibre.com.ar/MLA-883760437-smartthings-hub-_JM" target="_blank" class="btn btn-primary" role="button">Comprar</a> <a href="https://www.samsung.com/us/smart-home/smartthings-wifi/single/samsung-smartthings-wifi-1-pack-et-wv525bwegus/#specs"
+                            target="_blank" class="btn btn-primary" role="button">Web Oficial</a></p>
+                </div>
+            </div>
+            <div class="card border-danger cartaCaro">
+                <img class="card-img-top" src="./images/giftimg0009.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Detector de humo y Co2</h5>
+                    <p class="card-text">La seguridad primero... y si me avisa al celular mejor todavia</p>
+                    <p class="card-text text-center"><a href="https://articulo.mercadolibre.com.ar/MLA-827781214-google-nest-protect-dectector-de-humo-y-alarma-monoxido-co-_JM" target="_blank" class="btn btn-primary" role="button">Comprar</a> <a href="https://store.google.com/us/product/nest_protect_2nd_gen?hl=en-US&GoogleNest&utm_source=nest_redirect&utm_medium=google_oo&utm_campaign=GS103056&utm_term=protect"
+                            target="_blank" class="btn btn-primary" role="button">Web Oficial</a></p>
+                </div>
+            </div>
+            <div class="card border-danger cartaCaro">
+                <img class="card-img-top" src="./images/giftimg0010.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Aspiradora automatica Roomba S9+</h5>
+                    <p class="card-text">Todo limpio sin mover un pelo</p>
+                    <p class="card-text text-center"><a href="https://articulo.mercadolibre.com.ar/MLA-883830081-irobot-roomba-s9-9550-robot-de-limpieza-de-ventanas-1-_JM" target="_blank" class="btn btn-primary" role="button">Comprar</a> <a href="https://www.irobot.com.ar/roomba/s-series"
+                            target="_blank" class="btn btn-primary" role="button">Web Oficial</a></p>
+                </div>
+            </div>
+            <div class="card border-danger cartaBarato">
+                <img class="card-img-top" src="./images/giftimg0011.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Parlante bluetooth para la ducha</h5>
+                    <p class="card-text">Y asi escucho videitos en la ducha</p>
+                    <p class="card-text text-center"><a href="https://articulo.mercadolibre.com.ar/MLA-641531629-parlante-portatil-bluetooth-para-la-ducha-resistente-al-agua-_JM" target="_blank" class="btn btn-primary" role="button">Comprar</a> </p>
+                </div>
+            </div>
+            <div class="card border-danger cartaMedio">
+                <img class="card-img-top" src="./images/giftimg0012.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Aerografo principiante</h5>
+                    <p class="card-text">Tiene que ser un kit con compresor</p>
+                    <p class="card-text text-center"><a href="https://articulo.mercadolibre.com.ar/MLA-676365004-combo-olympo-compresor-automatico-y-aerografo-iwata-neo-cn-_JM" target="_blank" class="btn btn-primary" role="button">Comprar</a> <a href="https://www.iwata-airbrush.com/neo-for-iwata-gravity.html"
+                            target="_blank" class="btn btn-primary" role="button">Web Oficial</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-auto d-flex justify-content-center bg-primary text-light p-3">
+
+
+        <div class="copyrText">
+            Copyright © 2020 The Royal Ideas.
+
+            <a href="http://theroyalideas.com/">
+                <i class="fas fa-globe text-white"></i>
+            </a>
+
+            <a href="http://instagram.com/theroyalideas">
+                <i class="fab fa-instagram text-white"></i>
+            </a>
+
+            v0.1
+        </div>
+
+
+
+    </footer>
+
+    <div class="modal fade" id="modalAviso" tabindex="-1" role="dialog" aria-labelledby="modalAvisoTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title titulos2" id="exampleModalLongTitle">Aviso</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Si estas haciendote preguntas sobre que de todo esto regalar, elegí siempre lo mas caro :P
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!-- 
+
+    v0.1 - first commit
+
+
+-->
