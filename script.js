@@ -15,7 +15,7 @@ window.onload = function() {
         soloSoñar();
     }
     document.getElementById("link6").onclick = function fun() {
-        soloHot();
+        soloLoved();
     }
 }
 
@@ -119,6 +119,30 @@ function soloSoñar(e) {
     });
     var soñar = document.querySelectorAll("div.cartaSoñar");
     [].forEach.call(soñar, function(el) {
+        el.classList.remove("d-none");
+    });
+}
+
+function soloLoved(e) {
+
+    var barato = document.querySelectorAll("div.cartaBarato");
+    [].forEach.call(barato, function(el) {
+        el.classList.add("d-none");
+    });
+    var medio = document.querySelectorAll("div.cartaMedio");
+    [].forEach.call(medio, function(el) {
+        el.classList.add("d-none");
+    });
+    var caro = document.querySelectorAll("div.cartaCaro");
+    [].forEach.call(caro, function(el) {
+        el.classList.add("d-none");
+    });
+    var soñar = document.querySelectorAll("div.cartaSoñar");
+    [].forEach.call(soñar, function(el) {
+        el.classList.add("d-none");
+    });
+    var loved = document.querySelectorAll("div.loved");
+    [].forEach.call(loved, function(el) {
         el.classList.remove("d-none");
     });
 }
