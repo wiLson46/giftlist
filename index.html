@@ -27,52 +27,47 @@
 
 <body>
 
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-
         <div class="container">
             <a class="navbar-brand tituloMain"> wiLson's list
             </a>
-            <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#menuColapsable" aria-controls="#menuColapsable" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuColapsable" aria-controls="menuColapsable" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="menuColapsable">
                 <ul class="navbar-nav ml-auto text-uppercase">
 
                     <li class="nav-item ml-auto text-right px-1">
-                        <div id="link1" class="nav-link">Todos</div>
+                        <a id="link1" class="nav-link" href="#">Todos</a>
+                    </li>
+                    <li class="nav-item ml-auto text-right px-1">
+                        <a id="link2" class="nav-link" href="#">Barato</a>
                     </li>
 
                     <li class="nav-item ml-auto text-right px-1">
-                        <a id="link2" class="nav-link">Barato</a>
+                        <a id="link3" class="nav-link" href="#">Medio</a>
                     </li>
 
                     <li class="nav-item ml-auto text-right px-1">
-                        <a id="link3" class="nav-link">Medio</a>
+                        <a id="link4" class="nav-link" href="#">Caro</a>
                     </li>
-
                     <li class="nav-item ml-auto text-right px-1">
-                        <a id="link4" class="nav-link">Caro</a>
+                        <a id="link5" class="nav-link" href="#">Soñar no cuesta</a>
                     </li>
-
                     <li class="nav-item ml-auto text-right px-1">
-                        <a id="link5" class="nav-link">Soñar no cuesta</a>
+                        <a id="link6" class="nav-link" href="#">Preferidos</a>
                     </li>
-
                     <li class="nav-item ml-auto text-right px-1">
-                        <a id="link6" class="nav-link">Preferidos</a>
+                        <a id="link7" class="nav-link" href="#" data-toggle="modal" data-target="#modalAviso">Preguntas Frecuentas</a>
                     </li>
-
-                    <li class="nav-item ml-auto text-right px-1">
-                        <a class="nav-link" data-toggle="modal" data-target="#modalAviso">Preguntas Frecuentes</a>
-                    </li>
-
                 </ul>
-            </div>
 
+            </div>
         </div>
+
     </nav>
+
 
     <div class="container p-5">
         <div class="card-columns">
@@ -319,6 +314,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
+
                 <div class="modal-body">
 
                     <ul>
@@ -338,10 +334,13 @@
                             Y si, tengo razon con que menos de 10000 es barato.
                         </li>
                     </ul>
+
                 </div>
+
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
                 </div>
+
             </div>
         </div>
     </div>
