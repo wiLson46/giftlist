@@ -6,3 +6,7 @@
 .copyrText {
     font-family: 'Comfortaa', cursive;
 }
+
+.nav-link {
+    cursor: pointer;
+}
