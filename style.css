@@ -1,6 +1,55 @@
-.tituloMain {
+.tituloMain0 {
+    font-size: 30px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.tituloMain1 {
+    font-size: 30px;
+    font-family: 'Slackey', cursive;
+}
+
+.tituloMain11 {
+    font-size: 26px;
+    font-family: 'Slackey', cursive;
+}
+
+.tituloMain2 {
     font-size: 30px;
     font-family: 'Lobster', cursive;
+}
+
+.tituloMain3 {
+    font-size: 27px;
+    font-family: 'Monoton', cursive;
+}
+
+.tituloMain4 {
+    font-size: 35px;
+    font-family: 'Indie Flower', cursive;
+}
+
+.chooseText {
+    font-size: 85px;
+    font-family: 'Pacifico', cursive;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.cardLink {
 }
 
 .copyrText {

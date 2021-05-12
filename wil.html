@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/b84bdf459f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Indie+Flower&family=Lobster&family=Monoton&family=Pacifico&family=Slackey&display=swap" rel="stylesheet"> 
+
+    <link rel="icon" type="image/png" href="./images/favicon32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./images/favicon64.png" sizes="64x64">
+    <link rel="icon" type="image/png" href="./images/favicon128.png" sizes="128x128">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <title>wiLson's List</title>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand tituloMain2"> wiLson's list
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuColapsable" aria-controls="menuColapsable" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuColapsable">
+                <ul class="navbar-nav ml-auto text-uppercase">
+
+                    <li class="nav-item ml-auto text-right px-1">
+                        <a id="link1" class="nav-link" href="#">Todos</a>
+                    </li>
+                    <li class="nav-item ml-auto text-right px-1">
+                        <a id="link2" class="nav-link" href="#">Barato</a>
+                    </li>
+
+                    <li class="nav-item ml-auto text-right px-1">
+                        <a id="link3" class="nav-link" href="#">Medio</a>
+                    </li>
+
+                    <li class="nav-item ml-auto text-right px-1">
+                        <a id="link4" class="nav-link" href="#">Caro</a>
+                    </li>
+
+                    <li class="nav-item ml-auto text-right px-1">
+                        <a id="link5" class="nav-link" href="#">Soñar no cuesta</a>
+                    </li>
+
+                    <li class="nav-item ml-auto text-right px-1">
+                        <a id="link6" class="nav-link" href="#">Preferidos</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Otras Listas
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="lenny.html">Lenny</a>
+                          <a class="dropdown-item" href="#">Pri</a>
+                          <a class="dropdown-item" href="#">Lili</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item ml-auto text-right px-1">
+                        <a id="link7" class="nav-link" href="#" data-toggle="modal" data-target="#modalAviso">Preguntas Frecuentas</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+    </nav>
+
+
+    <div class="container p-5">
+        <div class="card-columns">
+            <div class="card border-primary cartaCaro">
+                <img class="card-img-top" src="./images/giftimg0002.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Puerta SISS BUNKER</h5>
+                    <p class="card-text">Una puerta para mucha seguridad del departamento</p>
+                    <p class="card-text text-center"><a href="https://siss.com.ar/puertas/puertas-blindadas-bunker/" target="_blank" class="btn btn-primary" role="button">Web Oficial</a></p>
+                </div>
+            </div>
+            <div class="card border-success text-white bg-success cartaMedio loved">
+                <img class="card-img-top" src="./images/giftimg0001.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Camara Ring para puerta</h5>
+                    <p class="card-text">Reemplaza el ojo de pez de la puerta por un timbre + camara que se puede atender por una app</p>
+                    <p class="card-text text-center"><a href="https://articulo.mercadolibre.com.ar/MLA-872679850-ring-peephole-cam-timbre-inteligente-video-hd-audio-alexa-_JM" target="_blank" class="btn btn-primary" role="button">Comprar</a> <a href="https://ring.com/products/door-peephole-security-camera"
+                            target="_blank" class="btn btn-primary" role="button">Web Oficial</a></p>
+                </div>
+            </div>
+            <div class="card border-warning cartaBarato cartaMedio cartaCaro cartaSoñar">
+                <img class="card-img-top" src="./images/giftimg0003.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Dinerito</h5>
+                    <p class="card-text">Dolares, pesos, cheques, transferencia, patacones. Porque el dinero no compra la felicidad pero si hay que llorar prefiero llorar en un Ferrari</p>
+                    <p class="card-text text-center"><a href="https://wa.me/5493413487711" target="_blank" class="btn btn-primary" role="button">Pedir el CBU</a></p>
+                </div>
+            </div>
+            <div class="card border-warning cartaSoñar">
+                <img class="card-img-top" src="./images/giftimg0004.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Un Ferrari SF90 Spider... aunque cualquier auto esta bien</h5>
+                    <p class="card-text">Claramente prefiero el Ferrari pero cualquier auto esta bien</p>
+                    <p class="card-text text-center"><a href="https://www.ferrari.com/es-AR/auto/sf90-spider" target="_blank" class="btn btn-primary" role="button">Comprar</a></p>
+                </div>
+            </div>
+            <div class="card border-success cartaMedio">
+                <img class="card-img-top" src="./images/giftimg0005.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Cerradura inteligente</h5>
+                    <p class="card-text">Preferiria la version WiFi, pero no llega a argentina asi que dejo la version normal que esta en ML</p>
+                    <p class="card-text text-center"><a href="https://articulo.mercadolibre.com.ar/MLA-883695998-august-cerradura-inteligente-homekit-_JM#position=1&type=item&tracking_id=60ab70af-1720-4763-b54b-e278538af759" target="_blank" class="btn btn-primary" role="button">Comprar</a>                        <a href="https://august.com/products/august-smart-lock-pro-connect" target="_blank" class="btn btn-primary" role="button">Web Oficial</a></p>
+                </div>
+            </div>
+            <div class="card border-primary cartaCaro">
+                <img class="card-img-top" src="./images/giftimg0006.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Tablet Samsung Tab S7 o S7+</h5>
+                    <p class="card-text">Hay que recambiar el iPad viejo que ya no funciona mas por una que valga la pena</p>
+                    <p class="card-text text-center"><a href="https://articulo.mercadolibre.com.ar/MLA-886132732-tablet-samsung-galaxy-tab-sm-t870-6gb-128gb-11-s-pen-negro-_JM" target="_blank" class="btn btn-primary" role="button">Comprar</a> <a href="https://www.samsung.com/ar/tablets/galaxy-tab-s/galaxy-tab-s7-11-inch-mystic-black-128gb-wi-fi-sm-t870nzklaro/"
+                            target="_blank" class="btn btn-primary" role="button">Web Oficial</a></p>
+                </div>
+            </div>
+            <div class="card border-primary cartaCaro">
+                <img class="card-img-top" src="./images/giftimg0007.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">iPad Air 4ta generación</h5>
+                    <p class="card-text">Nada mejor para recambiar el iPad viejo que un iPad nuevo no?</p>
+                    <p class="card-text text-center"><a href="https://articulo.mercadolibre.com.ar/MLA-896331809-apple-ipad-air-109-pulgadas-wi-fi-64-gb-gris-4ta-gen-_JM" target="_blank" class="btn btn-primary" role="button">Comprar</a> <a href="https://www.apple.com/ipad-air/" target="_blank"
+                            class="btn btn-primary" role="button">Web Oficial</a></p>
+                </div>
+            </div>
+            <div class="card border-success cartaMedio">
+                <img class="card-img-top" src="./images/giftimg0008.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Hub Para domotica</h5>
+                    <p class="card-text">Un aparatito que sirve para centralizar todas las cosas de domotica</p>
+                    <p class="card-text text-center"><a href="https://articulo.mercadolibre.com.ar/MLA-883760437-smartthings-hub-_JM" target="_blank" class="btn btn-primary" role="button">Comprar</a> <a href="https://www.samsung.com/us/smart-home/smartthings-wifi/single/samsung-smartthings-wifi-1-pack-et-wv525bwegus/#specs"
+                            target="_blank" class="btn btn-primary" role="button">Web Oficial</a></p>
+                </div>
+            </div>
+            <div class="card border-primary cartaCaro">
+                <img class="card-img-top" src="./images/giftimg0009.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Detector de humo y Co2</h5>
+                    <p class="card-text">La seguridad primero... y si me avisa al celular mejor todavia</p>
+                    <p class="card-text text-center"><a href="https://articulo.mercadolibre.com.ar/MLA-827781214-google-nest-protect-dectector-de-humo-y-alarma-monoxido-co-_JM" target="_blank" class="btn btn-primary" role="button">Comprar</a> <a href="https://store.google.com/us/product/nest_protect_2nd_gen?hl=en-US&GoogleNest&utm_source=nest_redirect&utm_medium=google_oo&utm_campaign=GS103056&utm_term=protect"
+                            target="_blank" class="btn btn-primary" role="button">Web Oficial</a></p>
+                </div>
+            </div>
+            <div class="card border-primary cartaCaro">
+                <img class="card-img-top" src="./images/giftimg0010.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Aspiradora automatica Roomba S9+</h5>
+                    <p class="card-text">Todo limpio sin mover un pelo</p>
+                    <p class="card-text text-center"><a href="https://articulo.mercadolibre.com.ar/MLA-883830081-irobot-roomba-s9-9550-robot-de-limpieza-de-ventanas-1-_JM" target="_blank" class="btn btn-primary" role="button">Comprar</a> <a href="https://www.irobot.com.ar/roomba/s-series"
+                            target="_blank" class="btn btn-primary" role="button">Web Oficial</a></p>
+                </div>
+            </div>
+            <div class="card border-danger cartaBarato">
+                <img class="card-img-top" src="./images/giftimg0011.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Parlante bluetooth para la ducha</h5>
+                    <p class="card-text">Y asi escucho videitos en la ducha</p>
+                    <p class="card-text text-center"><a href="https://articulo.mercadolibre.com.ar/MLA-641531629-parlante-portatil-bluetooth-para-la-ducha-resistente-al-agua-_JM" target="_blank" class="btn btn-primary" role="button">Comprar</a> </p>
+                </div>
+            </div>
+            <div class="card border-success text-white bg-success cartaMedio loved">
+                <img class="card-img-top" src="./images/giftimg0012.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Aerografo principiante</h5>
+                    <p class="card-text">Tiene que ser un kit con compresor</p>
+                    <p class="card-text text-center"><a href="https://articulo.mercadolibre.com.ar/MLA-676365004-combo-olympo-compresor-automatico-y-aerografo-iwata-neo-cn-_JM" target="_blank" class="btn btn-primary" role="button">Comprar</a> <a href="https://www.iwata-airbrush.com/neo-for-iwata-gravity.html"
+                            target="_blank" class="btn btn-primary" role="button">Web Oficial</a></p>
+                </div>
+            </div>
+            <div class="card border-primary cartaCaro">
+                <img class="card-img-top" src="./images/giftimg0013.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">TV con google assistant</h5>
+                    <p class="card-text">No importa demasiado las pulgadas, si que tenga google assistant</p>
+                    <p class="card-text text-center"><a href="https://www.fravega.com/p/smart-tv-50-4k-ultra-hd-tcl-l50p8m--501936" target="_blank" class="btn btn-primary" role="button">Comprar</a> <a href="https://tcl.com.ar/productos/televisores/android-tv-l50p8m/" target="_blank"
+                            class="btn btn-primary" role="button">Web Oficial</a></p>
+                </div>
+            </div>
+            <div class="card border-success cartaMedio">
+                <img class="card-img-top" src="./images/giftimg0014.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Google Home Hub</h5>
+                    <p class="card-text">Para las videollamadas mientras cocino</p>
+                    <p class="card-text text-center"><a href="https://articulo.mercadolibre.com.ar/MLA-847072692-google-home-hub-pantalla-7-smart-asistente-virtual-espanol-_JM" target="_blank" class="btn btn-primary" role="button">Comprar</a> <a href="https://store.google.com/us/product/google_nest_hub?hl=en-US"
+                            target="_blank" class="btn btn-primary" role="button">Web Oficial</a></p>
+                </div>
+            </div>
+            <div class="card border-success cartaMedio">
+                <img class="card-img-top" src="./images/giftimg0015.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">UPS 1500VA</h5>
+                    <p class="card-text">Hay que cuidar la PC</p>
+                    <p class="card-text text-center"><a href="https://hardcorecomputacion.com.ar/producto/ups-hunnox-1500va-lcd-3-tomas/" target="_blank" class="btn btn-primary" role="button">Comprar</a></p>
+                </div>
+            </div>
+            <div class="card border-warning cartaSoñar">
+                <img class="card-img-top" src="./images/giftimg0016.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Una semanita en Bora Bora</h5>
+                    <p class="card-text">Mente sana cuerpo sano... unas vacaciones reparadoras</p>
+                    <p class="card-text text-center"><a href="https://www.booking.com/region/pf/bora-bora.html" target="_blank" class="btn btn-primary" role="button">Comprar</a></p>
+                </div>
+            </div>
+            <div class="card border-danger cartaBarato">
+                <img class="imgtilde p-1" src="./images/tildeverde.png">
+                <img class="card-img-top" src="./images/giftimg0017.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Bowl de acero inoxidable</h5>
+                    <p class="card-text">Bate que bate...</p>
+                    <p class="card-text text-center"><a href="https://tecnococina.com.ar/productos/bowl-batidor-acero-inoxidable-28-cm/" target="_blank" class="btn btn-primary" role="button">Comprar</a></p>
+                </div>
+            </div>
+            <div class="card border-danger cartaBarato">
+                <img class="imgtilde p-1" src="./images/tildeverde.png">
+                <img class="card-img-top" src="./images/giftimg0018.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Estuche de cuero</h5>
+                    <p class="card-text">Para cuchillos y cosas de cocina</p>
+                    <p class="card-text text-center"><a href="https://www.instagram.com/buffle_estuches_de_cuchillos/" target="_blank" class="btn btn-primary" role="button">Web Oficial</a></p>
+                </div>
+            </div>
+            <div class="card border-success cartaMedio">
+                <img class="card-img-top" src="./images/giftimg0019.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Piedra para afilar "Global MS5/O+M, Medium 1000 Grit" </h5>
+                    <p class="card-text">Una primera afilada para los cuchillos copados</p>
+                    <p class="card-text text-center"><a href="http://www.cuchillosglobal.com.ar/global.pdf" target="_blank" class="btn btn-primary" role="button">Comprar</a></p>
+                </div>
+            </div>
+            <div class="card border-success cartaMedio">
+                <img class="card-img-top" src="./images/giftimg0020.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Piedra para afilar "Global MS5/P+S, Superfine 5000 Grit"</h5>
+                    <p class="card-text">Despues de la primer afilada va el trabajo fino</p>
+                    <p class="card-text text-center"><a href="http://www.cuchillosglobal.com.ar/global.pdf" target="_blank" class="btn btn-primary" role="button">Comprar</a></p>
+                </div>
+            </div>
+            <div class="card border-success cartaMedio">
+                <img class="card-img-top" src="./images/giftimg0021.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Cuchillo "Global G-5 - 18 cm Vegetable"</h5>
+                    <p class="card-text">Uno mas...</p>
+                    <p class="card-text text-center"><a href="http://www.cuchillosglobal.com.ar/global.pdf" target="_blank" class="btn btn-primary" role="button">Comprar</a></p>
+                </div>
+            </div>
+            <div class="card border-success cartaMedio">
+                <img class="card-img-top" src="./images/giftimg0022.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Dremel 4000</h5>
+                    <p class="card-text">Actualizando el top house...</p>
+                    <p class="card-text text-center"><a href="https://articulo.mercadolibre.com.ar/MLA-609386196-mini-torno-dremel-4000-36-acc-eje-flexi-maletin-35000rpm-_JM" target="_blank" class="btn btn-primary" role="button">Comprar</a> <a href="https://es.dremel.com/en_US/products/-/show-product/tools/4000-3-34-high-performance-rotary"
+                            target="_blank" class="btn btn-primary" role="button">Web Oficial</a></p>
+                </div>
+            </div>
+            <div class="card border-danger cartaBarato">
+                <img class="card-img-top" src="./images/giftimg0023.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Disco externo</h5>
+                    <p class="card-text">Para llevar todas las fotos peliculas etc de aca para alla</p>
+                    <p class="card-text text-center"><a href="https://hardcorecomputacion.com.ar/producto/disco-seagate-expansion-2tb-usb-3-0/" target="_blank" class="btn btn-primary" role="button">Comprar</a></p>
+                </div>
+            </div>
+            <div class="card border-primary cartaCaro">
+                <img class="card-img-top" src="./images/giftimg0024.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">GoPro Hero9 Black</h5>
+                    <p class="card-text">Hora de cambiar la reflex</p>
+                    <p class="card-text text-center"><a href="https://articulo.mercadolibre.com.ar/MLA-884620489-camara-gopro-hero-9-black-5k-20mp-sumergible-garantia-ofic-_JM" target="_blank" class="btn btn-primary" role="button">Comprar</a> <a href="https://gopro.com/es/ar/shop/cameras/hero9-black/CHDHX-901-master.html"
+                            target="_blank" class="btn btn-primary" role="button">Web Oficial</a></p>
+                </div>
+            </div>
+            <div class="card border-danger cartaBarato">
+                <img class="card-img-top" src="./images/giftimg0025.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Guante para tableta digital</h5>
+                    <p class="card-text">que no se marque ni se raye ni se ensucie la Wacom</p>
+                    <p class="card-text text-center"><a href="https://articulo.mercadolibre.com.ar/MLA-785702363-guante-de-artista-huion-para-tabletsmonitores-graficos-_JM" target="_blank" class="btn btn-primary" role="button">Comprar</a></p>
+                </div>
+            </div>
+            <div class="card border-danger cartaBarato">
+                <img class="card-img-top" src="./images/giftimg0026.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Jeringa Adobadora de acero</h5>
+                    <p class="card-text">Aca los utencillos de cocina son los indicados, no son jeringas descartables xD</p>
+                    <p class="card-text text-center"><a href="https://articulo.mercadolibre.com.ar/MLA-883899189-jeringa-gastronomica-aguja-acero-in-adobar-carne-pollo-cerdo-_JM" target="_blank" class="btn btn-primary" role="button">Comprar</a></p>
+                </div>
+            </div>
+            <div class="card border-danger cartaBarato">
+                <img class="card-img-top" src="./images/giftimg0027.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Lamparas inteligentes x6</h5>
+                    <p class="card-text">Salir y decir me olvide la luz prendida... con esto no pasa... x6 unidades</p>
+                    <p class="card-text text-center"><a href="https://articulo.mercadolibre.com.ar/MLA-876016474-lampara-led-bulb-wiz-wifi-luz-calidafria-9w-e27-x6-unidades-_JM" target="_blank" class="btn btn-primary" role="button">Comprar</a> <a href="https://www.wizconnected.com/"
+                            target="_blank" class="btn btn-primary" role="button">Web Oficial</a></p>
+
+                </div>
+            </div>
+            <div class="card border-danger cartaBarato">
+                <img class="card-img-top" src="./images/giftimg0028.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Lamparas inteligentes x3</h5>
+                    <p class="card-text">Salir y decir me olvide la luz prendida... con esto no pasa... x3 unidades</p>
+                    <p class="card-text text-center"><a href="https://articulo.mercadolibre.com.ar/MLA-875213691-lampara-led-bulb-wiz-wifi-luz-calidafria-9w-e27-x3-unidades-_JM" target="_blank" class="btn btn-primary" role="button">Comprar</a> <a href="https://www.wizconnected.com/"
+                            target="_blank" class="btn btn-primary" role="button">Web Oficial</a></p>
+                </div>
+            </div>
+
+            <div class="card border-success text-white bg-success cartaMedio loved">
+                <img class="card-img-top" src="./images/giftimg0029.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Kit de 3 lamparas inteligentes mas inteligente</h5>
+                    <p class="card-text">con sensor, control remoto y todo eso. no te lo podes perder bebe!</p>
+                    <p class="card-text text-center"><a href="https://articulo.mercadolibre.com.ar/MLA-875184996-kit-de-inicio-philips-hue-white-and-color-ambiance-2-switch-_JM" target="_blank" class="btn btn-primary" role="button">Comprar</a> <a href="https://www.philips-hue.com/es-ar"
+                            target="_blank" class="btn btn-primary" role="button">Web Oficial</a></p>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <footer class="footer mt-auto d-flex justify-content-center bg-primary text-light p-3">
+
+
+        <div class="row copyrText w-100">
+
+            <span class="col-6 text-right"> Copyright©2021 </span>
+            <span class="col-6 text-left"> Progressive.
+
+            <a href="http://instagram.com/ProgressiveOFI" target="_blank">
+                <i class="fab fa-instagram text-white px-1"></i>
+            </a>
+            <a href="https://wa.me/5493413487711" target="_blank">
+                <i class="fab fa-whatsapp text-white px-1"></i>
+            </a>
+
+            v0.8 </span>
+        </div>
+
+
+
+    </footer>
+
+    <div class="modal fade" id="modalAviso" tabindex="-1" role="dialog" aria-labelledby="modalAvisoTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title titulos2" id="exampleModalLongTitle">Aviso</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+
+                    <ul>
+                        <li>
+                            Esta web es un ejercicio practico y de uso real. Intenta ser una suerte de lista de casamiento pero para cualquier fecha para con mi persona.
+                        </li>
+                        <li>
+                            Si estas haciendote preguntas sobre que de todo esto regalar, elegí siempre lo mas caro :P
+                        </li>
+                        <li>
+                            Si, menos de 10000 es considerado barato en esta lista...
+                        </li>
+                        <li>
+                            NINGUNO de los links que pongo para comprar son obligatorios, el producto es lo importante, por eso trato siempre de poner el link a la web oficial para que sepan las especificaciones y cual es el modelo.
+                        </li>
+                        <li>
+                            Y si, tengo razon con que menos de 10000 es barato.
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!-- 
+
+    v0.1 - first commit
+    v0.2 - borders and loved products colors OK
+    v0.3 - fixed footer added more products
+    v0.4 - added tilde and added it at 2 products
+    v0.5 - added more products
+    v0.6 - added more products and corrected some stuff
+    v0.7 - fixed some texts and photo
+    v0.8 - added new index + lenny's first list
+    
+-->
